@@ -1,14 +1,10 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import MainBefore from "./components/MainBefore";
 import MainAfter from "./components/MainAfter";
-import Coba from "./components/Induk";
-import Anak from "./components/Anak";
-import Induk from "./components/Induk";
 
 export default function Home() {
-
   const [isMainBeforeActive, setIsMainBeforeActive] = useState(true);
   const [formData, setFormData] = useState("");
 
@@ -20,7 +16,6 @@ export default function Home() {
   const handleBack = () => {
     setIsMainBeforeActive(true);
   };
-
 
   return (
     <>
@@ -36,7 +31,9 @@ export default function Home() {
             </form>
             <div className="mx-8">
               <h1 className="text-medium my-2">Home</h1>
-              <h1 className="text-medium my-2">Discover</h1>
+              <a href="/pages/landing-page">
+                <h1 className="text-medium my-2">Discover</h1>
+              </a>
               <h1 className="text-medium my-2">History</h1>
               <h1 className="text-medium my-2">Feedback</h1>
             </div>
@@ -46,15 +43,7 @@ export default function Home() {
             <h1 className="font-regular text-md">Danu Wardana</h1>
           </div>
         </div>
-
         {isMainBeforeActive ? <MainBefore onAsk={handleAsk} /> : <MainAfter formData={formData} onBack={handleBack} />}
-
-        {/* Main yang kanan */}
-        {/* <MainBefore/>
-        <MainAfter/> */}
-
-        {/* <Anak/> */}
-        {/* <Induk/> */}
       </div>
     </>
   );
