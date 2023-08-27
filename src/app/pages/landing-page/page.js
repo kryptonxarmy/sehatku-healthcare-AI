@@ -3,6 +3,7 @@ import Navbar from "@/app/components/Navbar";
 import Stats from "@/app/components/Stats";
 import CardMembers from "@/app/components/CardMembers";
 import TechStack from "@/app/components/TechStack";
+import Footer from "@/app/components/Footer";
 
 const LandingPage = () => {
   const backgroundImageStyle = {
@@ -45,14 +46,14 @@ const LandingPage = () => {
       </div>
 
       <div
-        className="pb-10 px-10"
+        className="pb-10 px-10 bg-black"
         style={{
           background: "linear-gradient(90deg, rgba(32,81,49,1) 0%, rgba(41,81,55,1) 33%, rgba(47,86,49,1) 69%, rgba(48,100,52,1) 83%, rgba(43,95,49,1) 100%)",
         }}
       >
         {/* Contentt nyaaa */}
         <div
-          className="py-7 flex gap-3 flex-col text-center px-[3rem]"
+          className="py-7 h-[240vh] flex gap-3 flex-col text-center px-[3rem]"
           style={{
             background: "rgba(255, 255, 255, 0.1)",
             // boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
@@ -77,10 +78,17 @@ const LandingPage = () => {
 
 
           <h1 className="text-4xl text-white font-bold mt-5 mb-3">What we use</h1>
-          <div className="flex flex-row justify-between flex-wrap">
+          <div className="flex justify-between">
             <TechStack/>
           </div>
         </div>
+
+        {/* FOOTER */}
+
+
+        </div>
+        <div className="footer w-full bg-green-900 p-5">
+          <Footer/>
       </div>
     </div>
   );
