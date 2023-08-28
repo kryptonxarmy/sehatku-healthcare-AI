@@ -3,15 +3,15 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <div className="wrapper-footer flex gap-10  w-full">
-        <div className="branding h-full w-[30%]  flex flex-col">
+      <div className="wrapper-footer flex flex-col md:flex-row gap-10 w-full">
+        <div className="branding h-full md:w-[30%]  flex flex-col">
           <h1 className="text-white font-bold text-2xl">
             Sehat<span className="text-green-400">Ku</span> Healthcare
           </h1>
           <p>Sehatku | © 2023 All Right Reserved</p>
         </div>
 
-        <div className="anggota flex flex-col gap-5 w-[30%] text-white">
+        <div className="anggota flex flex-col gap-5 md:w-[30%] text-white">
           <div className="flex flex-col">
             <h1 className="font-bold">Ilham Satria</h1>
             <p>Email : ilhamsatria@gmail.com</p>
@@ -29,7 +29,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="about w-[30%]  flex flex-col gap-2 text-white">
+        <div className="about md:w-[30%]  flex flex-col gap-2 text-white">
           <h1 className="font-bold">About</h1>
           <p>Sehatku adalah platform inovatif berbasis website yang didedikasikan untuk memberikan informasi kesehatan yang akurat, dapat dipercaya, dan personal kepada penggunanya. Dengan fokus...</p>
           <a href="">

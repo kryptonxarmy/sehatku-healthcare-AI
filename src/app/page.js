@@ -19,8 +19,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex">
-        <div className="sidebar py-4 h-screen flex flex-col justify-between w-[20%] bg-[#212025]">
+      <div className="flex items-center justify-center">
+        <div className="sidebar py-4 h-screen hidden flex-col justify-between w-[20%] md:bg-[#212025]">
           <div className="">
             <h1 className="text-white flex font-medium justify-center text-2xl">
               Sehat<span className="text-green-300 font-bold">Ku</span>

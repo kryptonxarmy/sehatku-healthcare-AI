@@ -15,7 +15,7 @@ const LandingPage = () => {
 
   return (
     <div>
-      <div className="relative h-screen">
+      <div className="relative w-full h-screen">
         {/* Background Image */}
         <div className="absolute inset-0" style={backgroundImageStyle}></div>
 
@@ -25,13 +25,15 @@ const LandingPage = () => {
         {/* Content */}
         <Navbar />
         <div className="absolute inset-0 z-20 flex flex-row justify-between px-5 items-center">
-          <Stats />
-          <div className="absolute inset-0 flex flex-col justify-center items-center z-10 gap-3">
+          <div className="hidden md:flex">
+            <Stats />
+          </div>
+          <div className="absolute inset-0 text-center md:text-start flex flex-col pt-[20vh] md:pt-[40vh] items-center z-10 gap-3">
             <h1 className="font-bold text-6xl text-white">Discover your illness with AI</h1>
-            <h1 className="font-bold text-4xl text-white">Chuaakzzzz AWOKWKWKWKW</h1>
+            <h1 className="font-bold text-4xl hidden md:flex text-white">Find Your Solution in Here</h1>
             <a
               href="/"
-              className="px-7 py-3 rounded-lg bg-green-600 border-green-100 text-white"
+              className="px-7 py-3 rounded-lg mt-7 md:mt-0  bg-green-600 border-green-100 text-white"
               style={{
                 boxShadow: "32px 10px 41px 0px rgba(0,0,0,0.75)",
               }}
@@ -46,14 +48,14 @@ const LandingPage = () => {
       </div>
 
       <div
-        className="pb-10 px-10 bg-black"
+        className="pb-10 px-3 md:px-10 pt-10 md:pt-0"
         style={{
           background: "linear-gradient(90deg, rgba(32,81,49,1) 0%, rgba(41,81,55,1) 33%, rgba(47,86,49,1) 69%, rgba(48,100,52,1) 83%, rgba(43,95,49,1) 100%)",
         }}
       >
         {/* Contentt nyaaa */}
         <div
-          className="py-7 h-[240vh] flex gap-3 flex-col text-center px-[3rem]"
+          className="py-7 flex gap-3 flex-col text-center px-[3rem]"
           style={{
             background: "rgba(255, 255, 255, 0.1)",
             // boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
@@ -70,25 +72,24 @@ const LandingPage = () => {
           </p>
 
           <h1 className="text-4xl text-white font-bold mt-5 mb-3">Our Teams</h1>
-          <div className="flex flex-row justify-between flex-wrap">
+          <div className="flex flex-row justify-between gap-6 md:gap-0 flex-wrap">
             <CardMembers nama={"James Micheal Fritz"} bagian={"Data Science"} />
             <CardMembers nama={"Danu Wardana"} bagian={"Front end"} />
             <CardMembers nama={"Ilham Satria"} bagian={"Back end"} />
           </div>
 
-
-          <h1 className="text-4xl text-white font-bold mt-5 mb-3">What we use</h1>
-          <div className="flex justify-between">
-            <TechStack/>
+          <div className="h-full ">
+            <h1 className="text-4xl  text-white font-bold mt-5 mb-3">What we use</h1>
+            <div className="flex  justify-between">
+              <TechStack />
+            </div>
           </div>
         </div>
 
         {/* FOOTER */}
-
-
-        </div>
-        <div className="footer w-full bg-green-900 p-5">
-          <Footer/>
+      </div>
+      <div className="footer w-full bg-green-900 p-5">
+        <Footer />
       </div>
     </div>
   );
