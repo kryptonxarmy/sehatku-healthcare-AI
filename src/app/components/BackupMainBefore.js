@@ -4,7 +4,7 @@ import React from "react";
 import { useState } from "react";
 import Button from "./Button";
 
-function MainBefore({ onAsk }) {
+function BakcupMainBefore({ onAsk }) {
   const [data, setData] = useState("");
 
   const handleInputChange = (e) => {
@@ -52,4 +52,4 @@ function MainBefore({ onAsk }) {
   );
 }
 
-export default MainBefore;
+export default BackupMainBefore;
